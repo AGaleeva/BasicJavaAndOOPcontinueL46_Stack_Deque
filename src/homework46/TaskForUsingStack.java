@@ -30,7 +30,7 @@ public class TaskForUsingStack {
     }
 
     public static boolean isSymbolSequenceCorrect(List<Character> symbolList) {
-
+        if (symbolList == null) return false;
         Deque<Character> pairSymbolsStack = new LinkedList<>();
         for (Character ch : symbolList) {
             switch (ch) {
